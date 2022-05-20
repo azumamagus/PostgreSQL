@@ -1,0 +1,5 @@
+--Backup
+pg_dump.exe -v --host localhost --port 5432 --username postgres --format tar --file c:\teste\postgres.backup postgres
+
+--Restore
+pg_restore.exe -v --host localhost --port 5432 --username postgres --dbname restore c:\teste\postgres.backup  
